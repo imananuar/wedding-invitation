@@ -13,9 +13,10 @@ datasource db {
 model User {
   id            String     @id @default(uuid())
   email         String     @unique
-  username      String     @unique
+  username      String?    @unique
   fullName      String?    
   phoneNumber   BigInt
   role          String
   password      String?
+  guest         Int?
 }
