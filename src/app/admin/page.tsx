@@ -29,7 +29,6 @@ export default function Admin() {
 
     const handleUpload = (e: any) => {
         e.preventDefault();
-        // console.log(contacts);
         createContacts(contacts);
     }
 

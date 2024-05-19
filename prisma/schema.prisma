@@ -15,7 +15,7 @@ model User {
   email         String     @unique
   username      String?    @unique
   fullName      String?    
-  phoneNumber   BigInt
+  phoneNumber   BigInt     @unique
   role          String
   password      String?
   guest         Int?
